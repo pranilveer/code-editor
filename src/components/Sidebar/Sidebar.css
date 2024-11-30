@@ -1,0 +1,21 @@
+.sidebar {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar button {
+    background: #34495e;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .sidebar button:hover {
+    background: #1abc9c;
+  }

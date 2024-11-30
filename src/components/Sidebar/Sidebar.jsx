@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.css";
 
 const languages = [
@@ -13,10 +13,21 @@ const languages = [
 ];
 
 function Sidebar({ setLanguage }) {
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+
+  const handleButtonClick = (lang) => {
+    setLanguage(lang);
+    setSelectedLanguage(lang);
+  };
+
   return (
     <div className="sidebar">
       {languages.map((lang) => (
-        <button key={lang.name} onClick={() => setLanguage(lang.name)}>
+        <button
+          key={lang.name}
+          onClick={() => handleButtonClick(lang.name)}
+          className={lang.name === selectedLanguage ? "selected" : ""}
+        >
           {lang.icon} {lang.name}
         </button>
       ))}

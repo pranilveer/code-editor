@@ -3,8 +3,9 @@ import Switch from "react-switch";
 import "./ThemeToggle.css"
 
 function ThemeToggle({ theme, setTheme }) {
+
   return (
-    <div className="theme-toggle">
+    <div className={`theme-toggle ${theme}`}>
       <span>🌞</span>
       <Switch
         onChange={(checked) => setTheme(checked ? "dark" : "light")}

@@ -1,0 +1,6 @@
+.theme-toggle {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }

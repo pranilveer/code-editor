@@ -1,0 +1,11 @@
+.editor {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .editor.dark {
+    background: #2c3e50;
+    color: white;
+  }
